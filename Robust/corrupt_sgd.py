@@ -49,7 +49,7 @@ def corrupt_gradients(stacked_grads, epsilon):
         stacked_grads (tensor): Individual gradients for each data point, size = (batch_size, 2*768)
         epsilon (float): Fraction of gradients to corrupt (0 < epsilon <= 1).
     Returns:
-        corrupted_gradients: List of gradients after applying corruption.
+        stacked_grads (tensor): gradients after applying corruption.
     """
     # TODO: corrupt epsilon fraction of the batch of gradients
     
